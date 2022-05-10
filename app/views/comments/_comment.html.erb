@@ -1,0 +1,21 @@
+<div class="comment">
+  <% unless comment.archived? %>
+    <p>
+      <strong>Author:</strong>
+      <%= comment.commenter %>
+    </p>
+
+    <p>
+      <strong>Comment:</strong>
+      <%= comment.body %>
+    </p>
+  <% end %>
+
+  <p>
+    <%= button_to "Delete Comment", 
+          [comment.article, comment], 
+          method: :delete,
+          data: { method_turbo_confirm: "Are you sure?" } 
+    %>
+  </p>  
+</div>

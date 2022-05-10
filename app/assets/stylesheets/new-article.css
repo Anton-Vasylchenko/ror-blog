@@ -1,0 +1,41 @@
+form {
+  margin: 10px;
+}
+
+.btn-ok input {
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  background: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  border: solid 1px transparent;
+}
+
+.field_with_errors label {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.btn-ok input:hover {
+  border: 1px solid green;
+  background: white;
+  color: green;
+}
+
+textarea {
+  width: 60%;
+  min-height: 100px;
+}
+
+.error {
+  background: tomato;
+  border-radius: 3px;
+  margin: 5px;
+  padding: 3px;
+  color: white;
+  margin-bottom: 20px;
+}

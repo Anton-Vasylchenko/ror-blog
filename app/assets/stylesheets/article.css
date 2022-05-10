@@ -1,0 +1,68 @@
+body {
+  background: green;
+}
+.edit-panel-article {
+  position: absolute;
+  height: 20px;
+  right: 0px;
+  top: 0px;
+}
+
+.btn {
+  border-radius: 10px;
+  display: inline-block;
+  min-width: 40px;
+  padding: 5px;
+  background: green;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn a {
+  color: white;
+}
+
+.btn:hover {
+  background: white;
+  box-shadow: 0px 0px 10px green;
+}
+
+.btn:hover a {
+  color: green;
+}
+
+.button_to {
+  position: relative;
+  top: 0px;
+  right: 5px;
+}
+
+.btn-delete {
+  display: inline-block;
+}
+
+.btn-delete button {
+  background: tomato;
+  line-height: 20px;
+  border: 0px;
+  font-size: 16px;
+  color: white;
+  border-radius: 10px;
+  min-width: 40px;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-delete button:hover {
+  background: white;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px tomato;
+}
+
+.btn-delete button:hover {
+  color: tomato;
+}

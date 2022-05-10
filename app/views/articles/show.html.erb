@@ -1,0 +1,31 @@
+<div class="card">
+    <h1><%= @article.title %></h1>
+
+    <p><%= @article.body %></p>
+
+    <div class="edit-panel-article">
+        <div class="btn">
+            <%= link_to "Edit", edit_article_path(@article) %>
+        </div>
+        
+
+        <div class="btn-delete"> <%= button_to "Delete", article_path(@article), method: :delete,
+            data: { method_turbo_confirm: "Are you sure?" } %>
+        </div>        
+    </div>
+</div>
+
+
+<div class="card">
+    <h2>Comments:</h2>
+    <%= render @article.comments %>
+
+    <% if @article.comments.length == 0 %>
+        Comments are absent
+    <% end %>
+</div>
+
+<div class="card">
+    <h2>Add a comment:</h2>
+    <%= render 'comments/form' %>
+</div>

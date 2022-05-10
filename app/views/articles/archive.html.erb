@@ -1,0 +1,17 @@
+<div class="card">
+  <h1>Archived articles</h1>  
+</div>
+
+<div class="card">
+  <ul class="articles">
+    <% @articles.each do |article| %>
+        <li>
+          <%= link_to article.title, article %>
+        </li>
+    <% end %>
+
+    <% if @articles.length == 0 %>
+        Archive is empty
+    <% end %>
+  </ul>
+</div>

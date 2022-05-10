@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  </head>
+
+  <header>
+    <div class="card">
+      <nav>
+        <%= link_to 'Articles', '/' %>
+        <%= link_to "Create article", new_article_path %>
+        <%= link_to 'Archive', '/articles/archive' %>
+      </nav>
+    </div>
+  </header>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
